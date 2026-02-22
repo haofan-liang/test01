@@ -34,7 +34,11 @@ jobs:
         run: |
           echo "print docker version"
           docker --version
-          echo "build hello-world image"
-          docker build --file Dockerfile --tag my-hello-world:0.1 .
-          echo "run my-hello-world"
-          docker run my-hello-world
+          echo "pull docker image"
+          docker pull hello-world
+          echo "list docker images"
+          docker images
+          # echo "build hello-world image"
+          # docker build --file Dockerfile --tag my-hello-world:0.1 .
+          # echo "run my-hello-world"
+          # docker run my-hello-world
