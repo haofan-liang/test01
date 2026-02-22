@@ -35,6 +35,6 @@ jobs:
           echo "print docker version"
           docker --version
           echo "build hello-world image"
-          docker build --file Dockerfil --tag my-hello-world:0.1 .
+          docker build --file Dockerfile --tag my-hello-world:0.1 .
           echo "run my-hello-world"
           docker run my-hello-world
